@@ -17,6 +17,6 @@ En cliquant sur un objet, l'objet est mémorisé et on tombe sur le menu de pers
 ![image](Image/image3.png)
 
 ## Améliorations possibles
-    -  Améliorer l'esthétique du site
-    -  Pouvoir centrer l'image dans le menu de personnalisation
-    -  Pouvoir modifier la couleur de l'objet
+- Améliorer l'esthétique du site
+- Pouvoir centrer l'image dans le menu de personnalisation
+- Pouvoir modifier la couleur de l'objet
