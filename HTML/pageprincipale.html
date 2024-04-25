@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>specX</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="../JS/javascript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/header.js"></script>
+        <script language=”javascript” type=”text/javascript” src=”path/to/p5.dom.js”></script>
+    </head>
+
+    <body>
+
+        <header id="headerG"></header>
+
+        <div id="Content">
+            <div id="cagefiltre">
+                Votre choix :
+                <form>
+                    <input type="checkbox" id="main1" onclick="FiltreNbmain1()">
+                    <label> Leger</label>
+                    <input type="checkbox" id="main2" onclick="FiltreNbmain2()" >
+                    <label> Lourde</label>
+                    <br>
+                    <input type="checkbox" id="type1" onclick="FiltreType1()">
+                    <label>courte</label>
+                    <input type="checkbox" id="type2" onclick="FiltreType2()" >
+                    <label>longue</label>
+                    <input type="checkbox" id="type3" onclick="FiltreType3()">
+                    <label>arme special</label>
+                    
+                </form>                            
+                
+
+            </div>
+            <div id="parent">
+                <template id="produittemp">
+                    <div>
+                        <div id="div{{numid}}">
+                            <div class="texte">
+                                Arme {{Nom}}
+                                Type {{Type}}
+                                Prix {{Prix}}
+                            </div>
+                            <div class="Img">
+                                <a href="pagepersonalisation.html?id={{numid}}">
+                                    <img class="imgarme"src="../Image/armedef{{numid}}.png" alt="test">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>  
+        </div>
+
+        <div id="scrollUp">
+            <a href="#top"><img src="../Image/up.png"></a>
+        </div>
+        <footer id="footer"></footer>
+
+    </body>
+
+    <script src="../JS/template_pageP.js"></script>    
+    <script src="../JS/filtre.js"></script>
+
+</html>

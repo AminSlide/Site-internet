@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personalisation</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="../CSS/styleperso.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/canvas.js"></script>
+        <script src="../JS/javascript.js"></script>
+        <script src="../JS/header.js"></script>
+        <script src="../JS/Commande.js"></script>
+        
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <header id="headerG"></header>
+        <div id="Content">      
+            <p id="Partieperso">
+                <template id="perso">
+                    <div>
+                        <canvas id="canperso">
+                            <img id="imgref" src="../Image/armedef{{num}}.png">
+                        </canvas>
+                        <div class="content">
+                            <span>Voici La page perso N° {{num}} </span>
+                            <span>Vous avez choisi la {{Nom}}</span>
+                        </div>
+                    </div>
+                </template>
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Personnalisez votre arme !</legend>
+                    Couleur arme:<br>
+                    <input type="radio" name="couleur poignée" value="basique" checked onclick="CouleurArmeB()">basique
+                    <input type="radio" name="couleur poignée" value="rouge" onclick="CouleurArmeR()">rouge
+                    <input type="radio" name="couleur poignée" value="noire" onclick="CouleurArmeN()">noire<br>
+
+                    Couleur poignée:<br>
+                    <input type="radio" name="couleur lame" value="basique" checked onclick="CouleurPoiB()">basique
+                    <input type="radio" name="couleur lame" value="rouge" onclick="CouleurPoiR()">rouge
+                    <input type="radio" name="couleur lame" value="noire" onclick="CouleurPoiN()">noire<br>
+
+                    Quantité:<br>
+                    <input type="number" id="NBobjet" name="nombre d'articles" min="1">
+                </fieldset>
+            </form>
+            <button onclick="AjoutCommande()">Ajouter au panier</button>
+        </div>
+        <div id="scrollUp">
+            <a href="#top"><img src="../Image/up.png"></a>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+
+    <script src="../JS/perso.js"></script>
+    
+</html>

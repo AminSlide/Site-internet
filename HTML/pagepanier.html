@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="../CSS/style-panier.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Contenu du panier</title>
+        <script src="../JS/javascript.js"></script>
+        <script src="../JS/header.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    
+
+    <body> 
+
+        <header id="headerG"></header> 
+              
+        <div id="panierParent">
+            <template id="temppanier">
+                <div>
+                    <span> Vous avez choisi le Produit : {{Nom}} de type {{type}} à {{Nbmain}} main qui coute {{Prix}} {{Nb}} fois</span><br>
+                    <span>Personalisation choisi : arme de couleur {{Clame}} et protege arme de couleur {{Cpoi}}</span>
+                </div>
+            </template>
+        </div>
+        </div>
+        <div class="container" center>
+            
+            <div id="form-recap">
+                <form>
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                        Nom :<br>
+                        <input type="text" required><br>
+                        Prénom :<br>
+                        <input type="text" required><br>
+                        Mail :<br>
+                        <input type="email" required><br>                            
+                        Téléphone :<br>
+                        <input type="tel" pattern="[0-9]{10}" required><br>
+                        Adresse :<br>
+                        <input type="text" id="adresse" required><br>
+                        Code postal :<br>
+                        <input type="text" id="code postal" name="code_postal" pattern="[0-9]{5}" title="Code postal sur 5 chiffres" required><br>
+                        Ville :<br>
+                        <input type="text" required><br>
+                        Date de livraison :<br>
+                        <input type="date" required><br>
+                        Livraison express ( +8€ si livré dans les 72h ):<br>
+                        <input type="radio" name="livexpress" value="oui" >Oui
+                        <input type="radio" name="livexpress" value="non" checked>non<br>
+                        Demande de renseignements :<br>
+                        <textarea></textarea><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Payement</legend>
+                        Prix des articles :<br>
+                        Remise :<br>
+                        Couts de livraison :<br>                            
+                        Total :<br>
+                    </fieldset>
+                <INPUT TYPE="submit" NAME="validation" VALUE="Valider">
+             <INPUT TYPE="reset" NAME="effacage" VALUE="Effacer">
+             </form>
+             </div>
+        </div>
+        <div id="scrollUp">
+            <a href="#top"><img src="../Image/up.png"></a>
+        </div>
+        <footer id="footer"></footer>
+
+    </body>
+
+    <script src="../JS/javascript.js"></script>
+    <script src="../JS/template_Panier.js"></script>
+    
+</html>
