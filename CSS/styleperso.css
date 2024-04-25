@@ -1,0 +1,16 @@
+form {color:rgb(237, 233, 233); 
+    margin-left: 10%;
+    margin-right: 10%;}
+
+legend {color:rgb(249, 237, 237)}
+
+textarea {width : 100%;}
+
+#canperso {
+    border: solid 1px blue;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+
+}
+

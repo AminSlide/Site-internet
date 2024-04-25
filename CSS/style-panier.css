@@ -1,0 +1,25 @@
+body {color:rgb(162, 105, 105); 
+    background-image:url("../Image/fondgalaxy.jpg"); 
+    background-size: cover;}
+.panier{margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:red}
+.container {margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:rgb(119, 8, 8)}
+#form-recap { padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;}
+#image{padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    position: absolute}
+
+fieldset {color:white; }
+legend {color:white}
