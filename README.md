@@ -11,3 +11,9 @@ Le site se présente sous forme de grille où on peut choisir des items
 On peut filtrer les objets, comme par exemple dans l'image ci-dessous en cochant la case arme spéciale :
 
 ![image](Image/image2.png)
+
+En cliquant sur un objet, l'objet est mémorisé et on tombe sur le menu de personnalisation qu'on voit ci-dessous :
+
+![image](Image/image3.png)
+
+## Améliorations possibles
